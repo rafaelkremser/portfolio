@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;400&family=Outfit:wght@300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@300&family=Teko:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
     margin: 0;
@@ -50,7 +51,7 @@ header ul {
 }
 header ul li {
     list-style: none;
-    padding: 7%;
+    padding: 10% 7%;
 }
 header ul li a {
     text-decoration: none;
@@ -76,6 +77,13 @@ header ul li .item4:hover {
 header ul li .item5:hover {
     color: var(--green);
 }
+.main {
+    margin-top: -86px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
 .main .text {
     padding: 7%;
 }
@@ -91,6 +99,10 @@ header ul li .item5:hover {
     color: transparent;
     animation: gradient 6s ease infinite;
 }
+.main .text span p {
+    font-size: 18px;
+    font-weight: 700;
+}
 @keyframes gradient {
     0% {
         background-position: 0 50%;
@@ -102,20 +114,110 @@ header ul li .item5:hover {
         background-position: 0 50%;
     }
 }
+.main .text h1 {
+    line-height: 80px;
+    margin-top: 16px;
+    font-size: 74px;
+}
+.main .bubble {
+    position: absolute;
+    right: -00px;
+    bottom: -80px;
+}
+.main .bubble .encx {
+    position: relative;
+}
+.main .ilustration {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+.main .circulo {
+    height: 800px;
+    width: 800px;
+    background: linear-gradient(135deg, #2294e0 -10%, #db54fd 100%);
+    border-radius: 65% 35% 63% 37% / 64% 60% 40% 36% ;
+    z-index: -1000;
+}
 .main img {
     position: absolute;
-    right: -10%;
-    bottom: -4%;
+    top: -100px;
+    left: -350px;
+    height: 800px;
+    z-index: 7000;
+}
+.main .circulo .ilustration .glass {
+    position: absolute;
+    height: 275px;
+    width: 275px;
+    border-radius: 14px;
+    background: #ffffff0c;
+    backdrop-filter: blur(15px);
+    z-index: -1000;
+}
+.main .circulo .ilustration .glass1 {
+    left: -30px;
+    top: -30px;
+    height: 275px;
+    width: 225px;
+}
+.main .circulo .ilustration .glass2 {
+    left: 30%;
+    bottom: -10%;
 }
 .aboutme .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 80px 14%;
+    padding: 80px 14% 80px 1%;
     flex-wrap: wrap;
 }
+.aboutme .container .ilustration {
+    position: relative;
+}
+.aboutme .container .ilustration .bxs-polygon {
+    position: absolute;
+    top: 2%;
+    left: -19%;
+    font-size: 200px;
+    color: transparent;
+    background: linear-gradient(125deg, #2294e0 0%, #db54fd 100%);
+    background-clip: text;
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    animation: gradient 4s ease infinite;
+}
+.aboutme .container .ilustration .hex {
+    position: absolute;
+    left: 50px;
+    bottom: -50px;
+    height: 160px;
+    width: 160px;
+    background: linear-gradient(125deg, #2294e0 0%, #db54fd 100%);
+    background-size: 300% 300%;
+    animation: gradient 4s ease infinite;
+    -webkit-clip-path: polygon(51% 0, 93% 27%, 93% 72%, 50% 100%, 7% 73%, 7% 26%);
+    clip-path: polygon(51% 0, 93% 27%, 93% 72%, 50% 100%, 7% 73%, 7% 26%);
+}
+.aboutme .container .ilustration .border {
+    height: 560px;
+    width: 560px;
+    background: linear-gradient(125deg, #2294e0 20%, #db54fd 100%);
+    background-size: 300% 300%;
+    animation: gradient 4s ease infinite;
+    -webkit-clip-path: polygon(51% 0, 93% 27%, 93% 72%, 50% 100%, 7% 73%, 7% 26%);
+    clip-path: polygon(51% 0, 93% 27%, 93% 72%, 50% 100%, 7% 73%, 7% 26%);
+}
+.aboutme .container .ilustration img {
+    margin: 5px 0 0 5px;
+    height: 550px;
+    -webkit-clip-path: polygon(51% 0, 93% 27%, 93% 72%, 50% 100%, 7% 73%, 7% 26%);
+    clip-path: polygon(51% 0, 93% 27%, 93% 72%, 50% 100%, 7% 73%, 7% 26%);
+}
 .aboutme .container .informations {
-    max-width: 55%;
+    margin: 60px;
+    width: 46%;
 }
 .aboutme .container .informations .header {
     display: flex;
